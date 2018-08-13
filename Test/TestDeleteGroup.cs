@@ -16,12 +16,12 @@ namespace WebAddressbookTests
         [Test]
         public void Delete_Group_Test()
         {
-            HomePage();
-            Login (new LoginData("admin", "secret"));
-            GoToGroupPage();
-            DeleteGroup(1);
-            ReturnToGroupPage();
-            Logout();
+            helper_Navigation.HomePage();
+            helper_Login.Login (new LoginData("admin", "secret"));
+            helper_Navigation.GoToGroupPage();
+            helper_Group.DeleteGroup(1);
+            helper_Navigation.GoToGroupPage();
+            helper_Login.Logout();
         }
     }
 }
