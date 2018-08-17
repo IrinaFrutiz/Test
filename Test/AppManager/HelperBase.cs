@@ -9,7 +9,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace WebAddressbookTests
 {
-    class Helper_Base
+    public class Helper_Base
     {
         protected IWebDriver driver;
 

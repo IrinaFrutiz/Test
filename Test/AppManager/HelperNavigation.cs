@@ -11,9 +11,9 @@ namespace WebAddressbookTests
 {
      public class HelperNavi : Helper_Base 
     {
-        private string baseURL;
-        public class HelperNavi(IWebDriver driver, string baseURL)
-            :base (driver)
+        private string baseURL;      
+
+        public HelperNavi(IWebDriver driver, string baseURL) : base(driver)
         {
             this.baseURL = baseURL;
         }

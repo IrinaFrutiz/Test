@@ -8,16 +8,16 @@ using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 
 namespace WebAddressbookTests
-
-    public class Helper_Login : Helper_Base
 {
-    
-    public Helper_Login (IWebDriver driver)
-        : base(driver)
+    public class Helper_Login : Helper_Base
     {
-    }
-    public Helper_Login
-    
+
+        public Helper_Login(IWebDriver driver)
+            : base(driver)
+        {
+        }
+        //public Helper_Login
+
         public void Login(LoginData log)
         {
             driver.FindElement(By.Name("user")).Clear();
@@ -30,5 +30,5 @@ namespace WebAddressbookTests
         {
             driver.FindElement(By.LinkText("Logout")).Click();
         }
-    
+    }
 }

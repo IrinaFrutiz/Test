@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
@@ -11,7 +12,8 @@ namespace WebAddressbookTests
 {
     public class Helper_Group : Helper_Base 
     {
-    
+        private readonly object verificationErrors;
+
         public Helper_Group(IWebDriver driver) : base (driver)
         {
         
